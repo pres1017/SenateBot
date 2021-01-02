@@ -1,4 +1,4 @@
-def caesar_encrypt(content, cypher_value):
+def caesar_encrypt(content, cypher_value): # Encrypts using a Caesar cypher. Content is the message, cypher value is the key.
   encryptedWord = []
   cypher = ord(cypher_value) - ord('a')
   for x in content:
@@ -22,7 +22,7 @@ def caesar_encrypt(content, cypher_value):
       word += x
   return word
 
-def caesar_decrypt(content, cypher_value):
+def caesar_decrypt(content, cypher_value): # Decrypts a message that was decrypted using a Caesar cypher method.
   encryptedWord = []
   cypher = ord(cypher_value) - ord('a')
   for x in content:
@@ -48,7 +48,7 @@ def caesar_decrypt(content, cypher_value):
       word += x
   return word
 ##
-def morse_encrypt(content):
+def morse_encrypt(content): # Translates a message into Morse code. 
   morseCode = ""
   for x in content:
     if(x == 'A' or x == 'a'):
